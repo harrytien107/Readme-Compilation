@@ -3,3 +3,4 @@
 - [Revanced Android](./ReVanced-Android.md)
 - [Docker](./Docker.md)
 - [Setup Enviroment Cpp](./Setup-Enviroment-Cpp.md)
+- [Setup Window - Office](./Setup-Window.md)
