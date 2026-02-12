@@ -68,11 +68,60 @@ Mở Command Prompt với quyền Admin
 irm https://get.activated.win
 ```
 
-## Cài Office 365
+## Cài đặt và Active Office 365
 
-[Cài Office 365](https://youtu.be/KqKAm97Baeo?si=ig1xETd2GR1MipYM)
+### Cài đặt
 
-[Active Office 365](https://youtu.be/ogfi_py7n8k?si=4Ypv36wrnuGRI-a_)
+**B1:** Tải và Office Deployment Tool [Link](https://www.microsoft.com/en-us/download/details.aspx?id=49117) được file `officedeploymenttool_[id].exe`.
+
+**B2:** Giải nén file `officedeploymenttool_[id].exe` ra folder tên bất kì ví dụ: `Office 365`. Trong folder này sẽ có file `setup.exe` và `configuration-Office365-[x64].xml`.
+
+**B3:** Xóa file `configuration-Office365-[x64].xml` và vào [Link](https://config.office.com/deploymentsettings) để tạo file .xml riêng. 
+
+> Lưu ý: Bạn đặt file .xml tên gì thì ở dưới phải sửa lại! Hoặc để mặc định như hệ thống gợi ý càng tốt (mặc định là `Configuration.xml`)! Và nhớ down vào thư mục `Office 365` để có thể cài đặt.
+
+**B4:** Mở command prompt với quyền admin đúng thư mục `Office 365`.
+
+Bạn có thể mở bằng cách gõ `cmd` trong Windows Search chọn chạy dưới quyền admin. Sau đó cd vào thư mục `Office 365`.
+
+```bash
+cd "path\to\Office 365"
+```
+
+Cách tìm đường dẫn đúng là mở `explorer` rồi sao chép đường dẫn của thư mục `Office 365`.
+
+**B5:** Cài đặt Office 365
+
+```bash
+setup.exe /configure Configuration.xml
+```
+
+[Video hướng dẫn](https://youtu.be/KqKAm97Baeo?si=ig1xETd2GR1MipYM)
+
+### Active Office 365
+
+**B1:** Mở PowerShell với quyền Admin
+
+```bash
+irm https://get.activated.win | iex
+```
+
+**B2:** Nhấn phím 2 chọn active Office
+
+**B3:** Hoàn thành khi hiện `Office 365 is permanently activated.`
+
+_Gợi ý:_
+
+- HWID (Digital License): Activate vĩnh viễn Windows.
+- Ohook: Activate vĩnh viễn Office.
+- TSforge: Activate vĩnh viễn Windows, ESU, và Office.
+- Online KMS: Activate Windows/Office 180 days (Trọn đời với nhiệm vụ gia hạn).
+
+**B4:** Nhấn phím bất kì thoát ra. Sau đó nhấn phím 5 để kiểm tra active.
+
+Nếu không hiện thời gian còn lại là crack thành công vĩnh viễn.
+
+**Tham khảo thêm tại đây** [Link](https://massgrave.dev/)
 
 ## Một số cài đặt tối ưu và làm đẹp windows
 
