@@ -2,15 +2,15 @@
 
 ## Mục lục
 
-- [Chuẩn bị usb cứu hộ](./Setup-Window-Office.md#chuẩn-bị-usb-cứu-hộp)
+- [Chuẩn bị usb cứu hộ](./Setup-Window-Office.md#chuẩn-bị-usb-cứu-hộ)
 
-- [Cài Windows 11](./Setup-Window-Office.md#cai-windows-11)
+- [Cài Windows 11](./Setup-Window-Office.md#cài-windows-11)
 
-- [Cài Office 365](./Setup-Window-Office.md#cai-office-365)
+- [Cài Office 365](./Setup-Window-Office.md#cài-đặt-và-active-office-365)
 
-- [Một số cài đặt tối ưu và làm đẹp windows](./Setup-Window-Office.md#mot-so-cai-tao-toi-uu-va-lam-dep-windows)
+- [Một số cài đặt tối ưu và làm đẹp windows](./Setup-Window-Office.md#một-số-cài-đặt-tối-ưu-và-làm-đẹp-windows)
 
-- [Một số vấn đề gặp phải](./Setup-Window-Office.md#mot-so-van-de)
+- [Một số vấn đề gặp phải](./Setup-Window-Office.md#một-số-vấn-đề)
 
 ## Chuẩn bị usb cứu hộ
 
