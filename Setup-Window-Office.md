@@ -2,13 +2,15 @@
 
 ## Mục lục
 
-- [Chuẩn bị usb cứu hộ](./Setup-Window.md#chuẩn-bị-usb-cứu-hộp)
+- [Chuẩn bị usb cứu hộ](./Setup-Window-Office.md#chuẩn-bị-usb-cứu-hộp)
 
-- [Cài Windows 11](./Setup-Window.md#cai-windows-11)
+- [Cài Windows 11](./Setup-Window-Office.md#cai-windows-11)
 
-- [Cài Office 365](./Setup-Window.md#cai-office-365)
+- [Cài Office 365](./Setup-Window-Office.md#cai-office-365)
 
-- [Một số cài đặt tối ưu và làm đẹp windows](./Setup-Window.md#mot-so-cai-tao-toi-uu-va-lam-dep-windows)
+- [Một số cài đặt tối ưu và làm đẹp windows](./Setup-Window-Office.md#mot-so-cai-tao-toi-uu-va-lam-dep-windows)
+
+- [Một số vấn đề gặp phải](./Setup-Window-Office.md#mot-so-van-de)
 
 ## Chuẩn bị usb cứu hộ
 
@@ -16,7 +18,9 @@ Bạn có thể làm theo video hướng dẫn dưới đây [Link video](https:
 
 ## Cài Windows 11
 
-Trước tiên bạn phải chuẩn bị một [USB cứu hộ](./Setup-Window.md#chuẩn-bị-usb-cứu-hộp) trước khi cài vì các hướng dẫn sau đây đều liên quan đến đó.
+__Lưu ý:__ Nếu bạn chưa phân vùng ổ cứng hay ổ cứng mới mua thì hãy làm theo dưới đây trước [Step-by-step](./Setup-Window-Office.md#lan-dau-cai-win-tren-mot-o-cung-moi)
+
+Trước tiên bạn phải chuẩn bị một [USB cứu hộ](./Setup-Window-Office.md#chuẩn-bị-usb-cứu-hộp) trước khi cài vì các hướng dẫn sau đây đều liên quan đến đó.
 
 **B1:** Chia ổ đĩa (ít nhất 2 ổ C và D)
 
@@ -93,7 +97,7 @@ Cách tìm đường dẫn đúng là mở `explorer` rồi sao chép đường 
 **B5:** Cài đặt Office 365
 
 ```bash
-setup.exe /configure Configuration.xml
+setup /configure Configuration.xml
 ```
 
 [Video hướng dẫn](https://youtu.be/KqKAm97Baeo?si=ig1xETd2GR1MipYM)
@@ -167,4 +171,66 @@ Copy đường dẫn dưới đây và paste vào Registry Editor:
 Computer\HKEY_CURRENT_USER\Control Panel\Desktop
 ```
 
-Tìm `Menu Show Delay` đổi `value` từ `400` thành `0` (hoặc bằng số nào tùy thích càng nhỏ càng tốt)
+Tìm `Menu Show Delay` đổi `value` từ `400` thành `0` (hoặc bằng số nào tùy thích càng nhỏ càng tốt).
+
+## Một số vấn đề
+
+### Lần đầu cài Win trên một ổ cứng mới
+
+Ban đầu ổ cứng mới chưa có phân vùng nên ta cần chia phân vùng ổ đĩa trước. Bạn cần chuẩn bị một box chứa hoặc cấm trực tiếp vào máy để làm!
+
+B1: Mở command prompt với quyền admin
+
+B2: Gõ lệnh sau:
+
+```bash
+diskpart
+```
+
+B3: Gõ lệnh sau:
+
+```bash
+list disk
+```
+
+Hiện ra các phân vùng ổ đĩa của bạn, hãy chọn đúng ổ đĩa cần chia (thường là ổ đĩa 1 là ổ cứng mới gắn thêm)
+
+B4: Gõ lệnh sau:
+
+```bash
+select disk 1
+```
+
+B5: Gõ lệnh sau:
+
+> Bạn có thể thay đổi dung lượng theo ý thích (300 là 300MB). Và chỉnh label theo ý thích.
+
+```bash
+clean
+convert gpt
+create partition efi size=300
+format quick fs=fat32 label="System"
+assign letter="S"
+create partition msr size=16
+create partition primary
+format quick fs=ntfs label="Windows"
+assign letter="W"
+shrink minimum=1024
+create partition primary
+format quick fs=ntfs label="Recovery"
+assign letter="R"
+set id="de94bba4-06d1-4d40-a16a-bfd50179d6ac"
+gpt attributes=0x8000000000000001
+```
+B6: Gõ lệnh sau:
+
+Kiểm tra lại phân vùng vừa tạo
+
+```bash
+list partition
+```
+B7: Gõ lệnh sau:
+
+```bash
+exit
+```
