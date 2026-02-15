@@ -10,6 +10,16 @@
 
 - [Một số cài đặt tối ưu và làm đẹp windows](./Setup-Window-Office.md#một-số-cài-đặt-tối-ưu-và-làm-đẹp-windows)
 
+    - [Cài Glass Effect cho hệ thống](./Setup-Window-Office.md#glass-effect)
+
+    - [Cài đặt giảm Ram](./Setup-Window-Office.md#reduce-ram)
+
+    - [Đổi giao diện chuột phải win 11 thành win 10](./Setup-Window-Office.md#change-right-click)
+
+    - [Fix lag chuột phải khi bấm](./Setup-Window-Office.md#fix-lag-right-click)
+
+    - [Xóa icon shortcut trên ứng dụng hiển thị ngoài desktop](./Setup-Window-Office.md#remove-icon-shortcut)
+
 - [Một số vấn đề gặp phải](./Setup-Window-Office.md#một-số-vấn-đề)
 
 ## Chuẩn bị usb cứu hộ
@@ -129,7 +139,9 @@ Nếu không hiện thời gian còn lại là crack thành công vĩnh viễn.
 
 ## Một số cài đặt tối ưu và làm đẹp windows
 
-### Cài Glass Effect cho hệ thống
+### Glass Effect
+
+Làm đẹp giao diện Windows 11 thành giao diện glass effect
 
 - [Nilesoft Shell](https://nilesoft.org/)
 
@@ -137,11 +149,15 @@ Nếu không hiện thời gian còn lại là crack thành công vĩnh viễn.
 
 - [Video hướng dẫn dùng của christitus](https://youtu.be/6UQZ5oQg8XA?si=uS8CADOAeooVl9mg)
 
-### Cài đặt giảm Ram:
+### Reduce Ram
+
+Giảm lượng ram sử dụng
 
 [Mem Reduct](https://memreduct.org/)
 
-### Đổi giao diện chuột phải win 11 thành win 10
+### Change right click
+
+Chuyển giao diện chuột phải từ win 11 thành win 10
 
 **Cách 1:** Mở PowerShell với quyền Admin
 
@@ -155,7 +171,11 @@ irm christitus.com/win | iex
 reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
 ```
 
-### Fix lag chuột phải khi bấm
+Sau khi chuyển về win 10, mà bạn muốn có css của win 11 thì tải `Nilesoft Shell` hoặc `Windhawk`.
+
+### Fix lag right click
+
+Fix độ trễ khi bấm chuột phải
 
 **Cách 1:** Mở Command Prompt với quyền Admin.
 
@@ -173,7 +193,9 @@ Computer\HKEY_CURRENT_USER\Control Panel\Desktop
 
 Tìm `Menu Show Delay` đổi `value` từ `400` thành `0` (hoặc bằng số nào tùy thích càng nhỏ càng tốt).
 
-### Xóa icon shortcut trên ứng dụng hiển thị ngoài desktop
+### Remove icon shortcut
+
+Xóa icon shortcut khi hiển thị ngoài desktop
 
 B1: Mở `registry editor`
 
