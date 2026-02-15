@@ -173,6 +173,27 @@ Computer\HKEY_CURRENT_USER\Control Panel\Desktop
 
 Tìm `Menu Show Delay` đổi `value` từ `400` thành `0` (hoặc bằng số nào tùy thích càng nhỏ càng tốt).
 
+### Xóa icon shortcut trên ứng dụng hiển thị ngoài desktop
+
+B1: Mở `registry editor`
+
+B2: Copy đường dẫn dưới đây và paste vào Registry Editor:
+
+```bash
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\
+```
+B3: Nhấn chuột phải vào `Explorer` chọn `New` -> `Key` và đặt tên là `Shell Icons`
+
+B4: Nhấn chuột phải vào `Shell Icons` chọn `New` -> `String Value` và đặt tên là `29`
+
+B5: Double click vào `29` điền vào `Value data`
+
+```bash
+%windir%\System32\shell32.dll,-50
+```
+
+[Video hướng dẫn](https://youtu.be/TFQ42fCVT_w?si=xvxjhoy2Bfk5nCth)
+
 ## Một số vấn đề
 
 ### Lần đầu cài Win trên một ổ cứng mới
