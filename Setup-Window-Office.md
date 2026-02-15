@@ -145,9 +145,9 @@ Làm đẹp giao diện Windows 11 thành giao diện glass effect
 
 - [Nilesoft Shell](https://nilesoft.org/)
 
-- [Windhawk](https://windhawk.net/): [Video hướng dẫn](https://www.youtube.com/watch?v=FDAdfMLDzik)
+- [Windhawk](https://windhawk.net/) [ [Video hướng dẫn](https://www.youtube.com/watch?v=FDAdfMLDzik) ]
 
-- [Video hướng dẫn dùng của christitus](https://youtu.be/6UQZ5oQg8XA?si=uS8CADOAeooVl9mg)
+- [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) [ [Video hướng dẫn](https://www.youtube.com/watch?v=6UQZ5oQg8XA) ]
 
 ### Reduce Ram
 
