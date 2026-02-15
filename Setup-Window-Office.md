@@ -8,18 +8,6 @@
 
 - [Cài Office 365](./Setup-Window-Office.md#cài-đặt-và-active-office-365)
 
-- [Một số cài đặt tối ưu và làm đẹp windows](./Setup-Window-Office.md#một-số-cài-đặt-tối-ưu-và-làm-đẹp-windows)
-
-    - [Cài Glass Effect cho hệ thống](./Setup-Window-Office.md#glass-effect)
-
-    - [Cài đặt giảm Ram](./Setup-Window-Office.md#reduce-ram)
-
-    - [Đổi giao diện chuột phải win 11 thành win 10](./Setup-Window-Office.md#change-right-click)
-
-    - [Fix lag chuột phải khi bấm](./Setup-Window-Office.md#fix-lag-right-click)
-
-    - [Xóa icon shortcut trên ứng dụng hiển thị ngoài desktop](./Setup-Window-Office.md#remove-icon-shortcut)
-
 - [Một số vấn đề gặp phải](./Setup-Window-Office.md#một-số-vấn-đề)
 
 ## Chuẩn bị usb cứu hộ
@@ -136,85 +124,6 @@ _Gợi ý:_
 Nếu không hiện thời gian còn lại là crack thành công vĩnh viễn.
 
 **Tham khảo thêm tại đây** [Link](https://massgrave.dev/)
-
-## Một số cài đặt tối ưu và làm đẹp windows
-
-### Glass Effect
-
-Làm đẹp giao diện Windows 11 thành giao diện glass effect
-
-- [Nilesoft Shell](https://nilesoft.org/)
-
-- [Windhawk](https://windhawk.net/) [ [Video hướng dẫn](https://www.youtube.com/watch?v=FDAdfMLDzik) ]
-
-- [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) [ [Video hướng dẫn](https://www.youtube.com/watch?v=6UQZ5oQg8XA) ]
-
-### Reduce Ram
-
-Giảm lượng ram sử dụng
-
-[Mem Reduct](https://memreduct.org/)
-
-### Change right click
-
-Chuyển giao diện chuột phải từ win 11 thành win 10
-
-**Cách 1:** Mở PowerShell với quyền Admin
-
-```bash
-irm christitus.com/win | iex
-```
-
-**Cách 2:** Mở command prompt với quyền admin
-
-```bash
-reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
-```
-
-Sau khi chuyển về win 10, mà bạn muốn có css của win 11 thì tải `Nilesoft Shell` hoặc `Windhawk`.
-
-### Fix lag right click
-
-Fix độ trễ khi bấm chuột phải
-
-**Cách 1:** Mở Command Prompt với quyền Admin.
-
-```bash
-reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2} /f
-```
-
-**Cách 2:** Registry Editor
-
-Copy đường dẫn dưới đây và paste vào Registry Editor:
-
-```bash
-Computer\HKEY_CURRENT_USER\Control Panel\Desktop
-```
-
-Tìm `Menu Show Delay` đổi `value` từ `400` thành `0` (hoặc bằng số nào tùy thích càng nhỏ càng tốt).
-
-### Remove icon shortcut
-
-Xóa icon shortcut khi hiển thị ngoài desktop
-
-B1: Mở `registry editor`
-
-B2: Copy đường dẫn dưới đây và paste vào Registry Editor:
-
-```bash
-Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\
-```
-B3: Nhấn chuột phải vào `Explorer` chọn `New` -> `Key` và đặt tên là `Shell Icons`
-
-B4: Nhấn chuột phải vào `Shell Icons` chọn `New` -> `String Value` và đặt tên là `29`
-
-B5: Double click vào `29` điền vào `Value data`
-
-```bash
-%windir%\System32\shell32.dll,-50
-```
-
-[Video hướng dẫn](https://youtu.be/TFQ42fCVT_w?si=xvxjhoy2Bfk5nCth)
 
 ## Một số vấn đề
 
