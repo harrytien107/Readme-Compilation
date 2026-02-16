@@ -56,12 +56,12 @@ CornerOption: default
 RainbowSpeed: 3
 TitlebarColor:
   ColorTitlebar: 1
-  RainbowTitlebar: 0
-  titlerbarstyles_active: CC66FF
-  titlerbarstyles_inactive: CC66FF
+  RainbowTitlebar: 1
+  titlerbarstyles_active: FF0000
+  titlerbarstyles_inactive: 00FFFF
 TitlebarTextColor:
-  ColorTitlebarText: 0
-  RainbowTextColor: 0
+  ColorTitlebarText: 1
+  RainbowTextColor: 1
   titlerbarcolorstyles_active: FF0000
   titlerbarcolorstyles_inactive: 00FFFF
 BorderColor:
@@ -72,27 +72,27 @@ BorderColor:
 RuledPrograms:
   - target: mspaint.exe
     RenderingMod:
-      ThemeBackground: 0
-      AccentColorControls: 0
-    type: none
-    AccentBlurBehind: 3A232323
-    ImmersiveDarkTitle: 0
-    ExtendFrame: 0
+      ThemeBackground: 1
+      AccentColorControls: 1
+    type: acrylicblur
+    AccentBlurBehind: 8C000000
+    ImmersiveDarkTitle: 1
+    ExtendFrame: 1
     CornerOption: default
-    RainbowSpeed: 1
+    RainbowSpeed: 3
     TitlebarColor:
-      ColorTitlebar: 0
-      RainbowTitlebar: 0
+      ColorTitlebar: 1
+      RainbowTitlebar: 1
       titlerbarstyles_active: FF0000
       titlerbarstyles_inactive: 00FFFF
     TitlebarTextColor:
-      ColorTitlebarText: 0
-      RainbowTextColor: 0
+      ColorTitlebarText: 1
+      RainbowTextColor: 1
       titlerbarcolorstyles_active: FF0000
       titlerbarcolorstyles_inactive: 00FFFF
     BorderColor:
-      ColorBorder: 0
-      RainbowBorder: 0
+      ColorBorder: 1
+      RainbowBorder: 1
       borderstyles_active: FF0000
       borderstyles_inactive: 00FFFF
 ```
@@ -112,11 +112,11 @@ RuledPrograms:
     "CornerOption":"default",
     "RainbowSpeed":3,
     "TitlebarColor.ColorTitlebar":1,
-    "TitlebarColor.RainbowTitlebar":0,
-    "TitlebarColor.titlerbarstyles_active":"CC66FF",
-    "TitlebarColor.titlerbarstyles_inactive":"CC66FF",
-    "TitlebarTextColor.ColorTitlebarText":0,
-    "TitlebarTextColor.RainbowTextColor":0,
+    "TitlebarColor.RainbowTitlebar":1,
+    "TitlebarColor.titlerbarstyles_active":"FF0000",
+    "TitlebarColor.titlerbarstyles_inactive":"00FFFF",
+    "TitlebarTextColor.ColorTitlebarText":1,
+    "TitlebarTextColor.RainbowTextColor":1,
     "TitlebarTextColor.titlerbarcolorstyles_active":"FF0000",
     "TitlebarTextColor.titlerbarcolorstyles_inactive":"00FFFF",
     "BorderColor.ColorBorder":1,
@@ -124,24 +124,24 @@ RuledPrograms:
     "BorderColor.borderstyles_active":"FF0000",
     "BorderColor.borderstyles_inactive":"00FFFF",
     "RuledPrograms[0].target":"mspaint.exe",
-    "RuledPrograms[0].RenderingMod.ThemeBackground":0,
-    "RuledPrograms[0].RenderingMod.AccentColorControls":0,
-    "RuledPrograms[0].type":"none",
-    "RuledPrograms[0].AccentBlurBehind":"3A232323",
-    "RuledPrograms[0].ImmersiveDarkTitle":0,
-    "RuledPrograms[0].ExtendFrame":0,
+    "RuledPrograms[0].RenderingMod.ThemeBackground":1,
+    "RuledPrograms[0].RenderingMod.AccentColorControls":1,
+    "RuledPrograms[0].type":"acrylicblur",
+    "RuledPrograms[0].AccentBlurBehind":"8C000000",
+    "RuledPrograms[0].ImmersiveDarkTitle":1,
+    "RuledPrograms[0].ExtendFrame":1,
     "RuledPrograms[0].CornerOption":"default",
-    "RuledPrograms[0].RainbowSpeed":1,
-    "RuledPrograms[0].TitlebarColor.ColorTitlebar":0,
-    "RuledPrograms[0].TitlebarColor.RainbowTitlebar":0,
+    "RuledPrograms[0].RainbowSpeed":3,
+    "RuledPrograms[0].TitlebarColor.ColorTitlebar":1,
+    "RuledPrograms[0].TitlebarColor.RainbowTitlebar":1,
     "RuledPrograms[0].TitlebarColor.titlerbarstyles_active":"FF0000",
     "RuledPrograms[0].TitlebarColor.titlerbarstyles_inactive":"00FFFF",
-    "RuledPrograms[0].TitlebarTextColor.ColorTitlebarText":0,
-    "RuledPrograms[0].TitlebarTextColor.RainbowTextColor":0,
+    "RuledPrograms[0].TitlebarTextColor.ColorTitlebarText":1,
+    "RuledPrograms[0].TitlebarTextColor.RainbowTextColor":1,
     "RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_active":"FF0000",
     "RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_inactive":"00FFFF",
-    "RuledPrograms[0].BorderColor.ColorBorder":0,
-    "RuledPrograms[0].BorderColor.RainbowBorder":0,
+    "RuledPrograms[0].BorderColor.ColorBorder":1,
+    "RuledPrograms[0].BorderColor.RainbowBorder":1,
     "RuledPrograms[0].BorderColor.borderstyles_active":"FF0000",
     "RuledPrograms[0].BorderColor.borderstyles_inactive":"00FFFF"
 }
