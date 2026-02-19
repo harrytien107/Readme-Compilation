@@ -28,6 +28,14 @@ Tôi chỉ để làm lại css của win 11
 
 - [Download](https://nilesoft.org/)
 
+Dưới đây là một số mods và settings tôi dùng trong Nilesoft Shell:
+
+Thứ nhất bạn vào thư mục cài đặt của Nilesoft Shell, tôi cài mặc định nên là `C:\Program Files\Nilesoft Shell\import` có các file cấu hình. Nếu bạn để thư mục cài đặt ở nơi khác thì bạn vào thư mục đó nhé (Gợi ý có thể dùng [Everything](https://www.voidtools.com/) để tìm thư mục cài đặt).
+
+Vào file `theme.nss` để chỉnh sửa giao diện theo ý muốn hoặc tham khảo [Github](https://github.com/catppuccin/nilesoft-shell/tree/main) này.
+
+[Tham khảo video này](https://youtu.be/HwDcOhlaJsQ?si=5grpj4DzuRdp1NHn)
+
 ### Windhawk
 
 - [Download](https://windhawk.net/)
@@ -48,8 +56,8 @@ RenderingMod:
   SysColors: 1
   AccentColorControls: 1
 type: acrylicblur
-AccentBlurBehind: 8C000000
-FlyoutsEffects: 1
+AccentBlurBehind: '00000000'
+FlyoutsEffects: 0
 ImmersiveDarkTitle: 1
 ExtendFrame: 1
 CornerOption: default
@@ -57,29 +65,29 @@ RainbowSpeed: 5
 TitlebarColor:
   ColorTitlebar: 1
   RainbowTitlebar: 1
-  titlerbarstyles_active: FF0000
-  titlerbarstyles_inactive: 0000FF
+  titlerbarstyles_active: f4b8e4
+  titlerbarstyles_inactive: f4b8e4
 TitlebarTextColor:
   ColorTitlebarText: 0
   RainbowTextColor: 0
-  titlerbarcolorstyles_active: FF0000
-  titlerbarcolorstyles_inactive: 00FFFF
+  titlerbarcolorstyles_active: f4b8e4
+  titlerbarcolorstyles_inactive: f4b8e4
 BorderColor:
   ColorBorder: 1
   RainbowBorder: 1
-  borderstyles_active: FF0000
-  borderstyles_inactive: 00FFFF
+  borderstyles_active: f4b8e4
+  borderstyles_inactive: f4b8e4
 RuledPrograms:
   - target: WINWORD.EXE
     RenderingMod:
       ThemeBackground: 0
       AccentColorControls: 0
-    type: ''
+    type: acrylicblur
     AccentBlurBehind: ''
     ImmersiveDarkTitle: 0
     ExtendFrame: 0
     CornerOption: ''
-    RainbowSpeed: 0
+    RainbowSpeed: 5
     TitlebarColor:
       ColorTitlebar: 0
       RainbowTitlebar: 0
@@ -93,18 +101,18 @@ RuledPrograms:
     BorderColor:
       ColorBorder: 1
       RainbowBorder: 1
-      borderstyles_active: ''
-      borderstyles_inactive: ''
+      borderstyles_active: f4b8e4
+      borderstyles_inactive: f4b8e4
   - target: EXCEL.EXE
     RenderingMod:
       ThemeBackground: 0
       AccentColorControls: 0
-    type: ''
+    type: acrylicblur
     AccentBlurBehind: ''
     ImmersiveDarkTitle: 0
     ExtendFrame: 0
     CornerOption: ''
-    RainbowSpeed: 0
+    RainbowSpeed: 5
     TitlebarColor:
       ColorTitlebar: 0
       RainbowTitlebar: 0
@@ -118,18 +126,18 @@ RuledPrograms:
     BorderColor:
       ColorBorder: 1
       RainbowBorder: 1
-      borderstyles_active: ''
-      borderstyles_inactive: ''
+      borderstyles_active: f4b8e4
+      borderstyles_inactive: f4b8e4
   - target: POWERPNT.EXE
     RenderingMod:
       ThemeBackground: 0
       AccentColorControls: 0
-    type: ''
+    type: acrylicblur
     AccentBlurBehind: ''
     ImmersiveDarkTitle: 0
     ExtendFrame: 0
     CornerOption: ''
-    RainbowSpeed: 0
+    RainbowSpeed: 5
     TitlebarColor:
       ColorTitlebar: 0
       RainbowTitlebar: 0
@@ -143,8 +151,8 @@ RuledPrograms:
     BorderColor:
       ColorBorder: 1
       RainbowBorder: 1
-      borderstyles_active: ''
-      borderstyles_inactive: ''
+      borderstyles_active: f4b8e4
+      borderstyles_inactive: f4b8e4
 ```
 
 - Advanced:
@@ -155,33 +163,33 @@ RuledPrograms:
     "RenderingMod.SysColors": 1,
     "RenderingMod.AccentColorControls": 1,
     "type": "acrylicblur",
-    "AccentBlurBehind": "8C000000",
-    "FlyoutsEffects": 1,
+    "AccentBlurBehind": "00000000",
+    "FlyoutsEffects": 0,
     "ImmersiveDarkTitle": 1,
     "ExtendFrame": 1,
     "CornerOption": "default",
     "RainbowSpeed": 5,
     "TitlebarColor.ColorTitlebar": 1,
     "TitlebarColor.RainbowTitlebar": 1,
-    "TitlebarColor.titlerbarstyles_active": "FF0000",
-    "TitlebarColor.titlerbarstyles_inactive": "0000FF",
+    "TitlebarColor.titlerbarstyles_active": "f4b8e4",
+    "TitlebarColor.titlerbarstyles_inactive": "f4b8e4",
     "TitlebarTextColor.ColorTitlebarText": 0,
     "TitlebarTextColor.RainbowTextColor": 0,
-    "TitlebarTextColor.titlerbarcolorstyles_active": "FF0000",
-    "TitlebarTextColor.titlerbarcolorstyles_inactive": "00FFFF",
+    "TitlebarTextColor.titlerbarcolorstyles_active": "f4b8e4",
+    "TitlebarTextColor.titlerbarcolorstyles_inactive": "f4b8e4",
     "BorderColor.ColorBorder": 1,
     "BorderColor.RainbowBorder": 1,
-    "BorderColor.borderstyles_active": "FF0000",
-    "BorderColor.borderstyles_inactive": "00FFFF",
+    "BorderColor.borderstyles_active": "f4b8e4",
+    "BorderColor.borderstyles_inactive": "f4b8e4",
     "RuledPrograms[0].target": "WINWORD.EXE",
     "RuledPrograms[0].RenderingMod.ThemeBackground": 0,
     "RuledPrograms[0].RenderingMod.AccentColorControls": 0,
-    "RuledPrograms[0].type": "",
+    "RuledPrograms[0].type": "acrylicblur",
     "RuledPrograms[0].AccentBlurBehind": "",
     "RuledPrograms[0].ImmersiveDarkTitle": 0,
     "RuledPrograms[0].ExtendFrame": 0,
     "RuledPrograms[0].CornerOption": "",
-    "RuledPrograms[0].RainbowSpeed": 0,
+    "RuledPrograms[0].RainbowSpeed": 5,
     "RuledPrograms[0].TitlebarColor.ColorTitlebar": 0,
     "RuledPrograms[0].TitlebarColor.RainbowTitlebar": 0,
     "RuledPrograms[0].TitlebarColor.titlerbarstyles_active": "",
@@ -192,17 +200,17 @@ RuledPrograms:
     "RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_inactive": "",
     "RuledPrograms[0].BorderColor.ColorBorder": 1,
     "RuledPrograms[0].BorderColor.RainbowBorder": 1,
-    "RuledPrograms[0].BorderColor.borderstyles_active": "",
-    "RuledPrograms[0].BorderColor.borderstyles_inactive": "",
+    "RuledPrograms[0].BorderColor.borderstyles_active": "f4b8e4",
+    "RuledPrograms[0].BorderColor.borderstyles_inactive": "f4b8e4",
     "RuledPrograms[1].target": "EXCEL.EXE",
     "RuledPrograms[1].RenderingMod.ThemeBackground": 0,
     "RuledPrograms[1].RenderingMod.AccentColorControls": 0,
-    "RuledPrograms[1].type": "",
+    "RuledPrograms[1].type": "acrylicblur",
     "RuledPrograms[1].AccentBlurBehind": "",
     "RuledPrograms[1].ImmersiveDarkTitle": 0,
     "RuledPrograms[1].ExtendFrame": 0,
     "RuledPrograms[1].CornerOption": "",
-    "RuledPrograms[1].RainbowSpeed": 0,
+    "RuledPrograms[1].RainbowSpeed": 5,
     "RuledPrograms[1].TitlebarColor.ColorTitlebar": 0,
     "RuledPrograms[1].TitlebarColor.RainbowTitlebar": 0,
     "RuledPrograms[1].TitlebarColor.titlerbarstyles_active": "",
@@ -213,17 +221,17 @@ RuledPrograms:
     "RuledPrograms[1].TitlebarTextColor.titlerbarcolorstyles_inactive": "",
     "RuledPrograms[1].BorderColor.ColorBorder": 1,
     "RuledPrograms[1].BorderColor.RainbowBorder": 1,
-    "RuledPrograms[1].BorderColor.borderstyles_active": "",
-    "RuledPrograms[1].BorderColor.borderstyles_inactive": "",
+    "RuledPrograms[1].BorderColor.borderstyles_active": "f4b8e4",
+    "RuledPrograms[1].BorderColor.borderstyles_inactive": "f4b8e4",
     "RuledPrograms[2].target": "POWERPNT.EXE",
     "RuledPrograms[2].RenderingMod.ThemeBackground": 0,
     "RuledPrograms[2].RenderingMod.AccentColorControls": 0,
-    "RuledPrograms[2].type": "",
+    "RuledPrograms[2].type": "acrylicblur",
     "RuledPrograms[2].AccentBlurBehind": "",
     "RuledPrograms[2].ImmersiveDarkTitle": 0,
     "RuledPrograms[2].ExtendFrame": 0,
     "RuledPrograms[2].CornerOption": "",
-    "RuledPrograms[2].RainbowSpeed": 0,
+    "RuledPrograms[2].RainbowSpeed": 5,
     "RuledPrograms[2].TitlebarColor.ColorTitlebar": 0,
     "RuledPrograms[2].TitlebarColor.RainbowTitlebar": 0,
     "RuledPrograms[2].TitlebarColor.titlerbarstyles_active": "",
@@ -234,8 +242,8 @@ RuledPrograms:
     "RuledPrograms[2].TitlebarTextColor.titlerbarcolorstyles_inactive": "",
     "RuledPrograms[2].BorderColor.ColorBorder": 1,
     "RuledPrograms[2].BorderColor.RainbowBorder": 1,
-    "RuledPrograms[2].BorderColor.borderstyles_active": "",
-    "RuledPrograms[2].BorderColor.borderstyles_inactive": ""
+    "RuledPrograms[2].BorderColor.borderstyles_active": "f4b8e4",
+    "RuledPrograms[2].BorderColor.borderstyles_inactive": "f4b8e4"
 }
 ```
 
