@@ -355,7 +355,7 @@ Lưu ý: nếu bạn lấy code của tôi thì chỉ cần vào mục `Settings
     <summary>Click to expand</summary>
 
     ```yaml
-    theme: ''
+    theme: TranslucentTaskbar
     controlStyles:
       - target: Taskbar.TaskbarFrame > Grid#RootGrid > Taskbar.TaskbarBackground > Grid > Rectangle#BackgroundFill
         styles:
@@ -443,7 +443,7 @@ Lưu ý: nếu bạn lấy code của tôi thì chỉ cần vào mục `Settings
     <summary>Click to expand</summary>
 
     ```yaml
-    theme: ''
+    theme: WindowGlass
     controlStyles:
       - target: Taskbar.TaskbarFrame#TaskbarFrame
         styles:
