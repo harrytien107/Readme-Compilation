@@ -14,6 +14,12 @@
 
 Bạn có thể làm theo video hướng dẫn dưới đây [Link video](https://youtu.be/g2tDjh7v-Ok?si=PSa-RFeuJ0qHI6oA)
 
+#### Các USB Boot mà tôi recommend:
+- ⭐ Ventoy 
+- NHV BOOT (có bản free và paid)
+- Anhdv Boot (có bản free và paid)
+- WinPE
+
 ## Cài Windows 11
 
 __Lưu ý:__ Nếu bạn chưa phân vùng ổ cứng hay ổ cứng mới mua thì hãy làm theo dưới đây trước [Step-by-step](./Setup-Window-Office.md#lan-dau-cai-win-tren-mot-o-cung-moi)
@@ -24,23 +30,63 @@ Trước tiên bạn phải chuẩn bị một [USB cứu hộ](./Setup-Window-O
 
 **B2:** Lên [Microsoft](https://www.microsoft.com/en-us/software-download/windows11) để tải file windows 11 .iso (lưu ý để vào ổ D, không được phép để vào ổ C)
 
+Các chỗ tải iso (recommend):
+- ⭐ [Massgrave](https://massgrave.dev/genuine-installation-media)
+- ⭐ [OS click](https://os.click/) 
+- ⭐ [PITVN](https://docs.google.com/spreadsheets/u/7/d/e/2PACX-1vRlK-vRwPJHDaANT81EjyG4m5ZnLXdKRYfS0eKXyCzGymEfUDmKHRhxvUbtWYTfVn7MJ3E2jk7v3cGi/pubhtml?usp=embed_facebook#gid=0)
+- [Adguard](https://files.rg-adguard.net/version/f0bd8307-d897-ef77-dbd6-216fefbe94c5)
+- [Hải dớ](https://docs.google.com/spreadsheets/d/1SsEA4SC1RV1_-Dejz4zUVIsXBPBkKMfe11Ik6NUOmMQ/edit?gid=0#gid=0)
+- [Zinyan91](https://docs.google.com/spreadsheets/d/e/2PACX-1vTId_2VGY1MeQdeH6OU6Oja27zMe91mHmYUl6aVWsyKlcFBuLwvr2M-9uaBRWDUqxPAi5xE-pqief4d/pubhtml#gid=1662926245)
+
+
 **B3:** Làm ra file .xml _(nếu muốn windows được cài nhẹ, còn không khỏi tạo cũng được)_
 
 - Cách 1: lên web này tạo [Link](https://schneegans.de/windows/unattend-generator/)
 
 - Cách 2: tải file .xml có sẵn trên github [Link](https://github.com/memstechtips/UnattendedWinstall/blob/main/autounattend.xml#L10)
+> ❗**Hãy lưu ý trước khi dùng file này để cài win**
+>
+> File unattended của Winhance mức độ debloat sâu nên sẽ xóa hết các phần mềm của mstore cho dù bạn có tải msstore rồi restart máy sẽ auto remove msstore ra khỏi máy.
+>
+> **Cách fix:** mở file unattended ở notepad rồi tìm dòng `'Microsoft.WindowsStore'` xóa bỏ hoặc comment `#` ở đằng trước.
+>
+> Ví dụ: `#   'Microsoft.WindowsStore'`
+>
+> Tương tự cho mấy phần mềm khác.
 
 **B4:** Cắm usb cứu hộ sao đó restart máy, trong lúc đang restart bấm các nút hàng F, để chọn môi trường trong usb cứu hộ
+> **Cách nhanh và lười**: Khi ở desktop máy thì tạo shortcut và nhập `shutdown /r /fw /t 0` next next rồi chạy hoặc mở cmd nhập lệnh chạy rồi máy sẽ tự vào bios.
 
-**B5:** Coi theo video cài windows của "Neyako Phạm" [Link](https://vt.tiktok.com/ZS9JhErjobKJd-0MDv3/)
+**B5: (optional)** Coi theo video cài windows của "Neyako Phạm" [Link](https://vt.tiktok.com/ZS9JhErjobKJd-0MDv3/)
+> Đủ ổn để nghe theo để cài win nhưng hãy xem README này để dễ hơn. (I hate dic dok btw)
 
-**B6:** Cài lại các phần mềm, sau khi cài lại windows
+**B6: (optional)** Sau khi cài lại win thì hãy chạy talon để được performance tốt nhất
+> 🐧 Mặc dù file unattended đã đủ nhưng talon sẽ cho lại result tốt nhất, tất nhiêu sẽ là optional thôi vì unattended đã đủ cho ngườ dùng cơ bản.
+
+Mở PowerShell với quyền admin
+
+**Talon:** Bản full 
+
+```bash
+irm https://debloat.win/now | iex
+```
+
+**Talon Lite:** Bản cơ bản nếu sợ 😉
+
+```bash
+irm https://debloat.win/lite | iex
+```
+
+**B7:** Cài lại các phần mềm, sau khi cài lại windows
 
 Mở powershell với quyền admin
 
 ```bash
 irm christitus.com/win | iex
 ```
+
+Tải Microsoft Store (optional): [Link](https://github.com/stdin82/htfx/releases/tag/v0.0.24)
+> Chạy `Add-Store.cmd` là được.
 
 _Lưu ý:_ Do 1 số phần mềm cần cài nằm trên Microsoft Store, mà gần đây nó hay bị lỗi.
 
@@ -52,11 +98,13 @@ Mở PowerShell với quyền Admin
 Get-AppxPackage -AllUsers *WindowsStore* | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 ```
 
-**B7:** Đi kiếm chỗ cài đặt driver bị thiếu (VD: với máy Lenovo thì cài Lenovo Vantage, vô phần system update)
+**B8:** Đi kiếm chỗ cài đặt driver bị thiếu (VD: với máy Lenovo thì cài Lenovo Vantage, vô phần system update)
+- Snappy Driver
+- [Lenovo Tool Kit](https://github.com/LenovoLegionToolkit-Team/LenovoLegionToolkit/releases) (Dành cho máy Lenovo)
 
-**B8:** Cài phần mềm Winhance, để tắt/bật windows update
+**B9:** Cài phần mềm Winhance, để tắt/bật windows update
 
-**B9:** Active windows và Microsoft Office
+**B10:** Active windows và Microsoft Office
 
 Mở PowerShell với quyền Admin
 
