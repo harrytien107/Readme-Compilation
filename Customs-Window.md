@@ -811,6 +811,65 @@ Lưu ý: nếu bạn lấy code của tôi thì chỉ cần vào mục `Settings
 
     </details>
 
+5. Windows 11 File Explorer Styler
+
+    Làm mờ thanh công cụ trong `Explorer`!
+
+    __⚠️ Lưu ý__ Nếu dùng mod này thì mod `Translucent Windows` sẽ không còn trong suốt như đoạn code của tôi nữa mà sẽ chuyển thanh đục mờ!
+
+- Settings:
+
+  <details>
+  <summary>Click to expand</summary>
+
+  ```yaml
+  theme: Translucent Explorer11
+  backgroundTranslucentEffect: ''
+  backgroundTranslucentEffectRegion: ''
+  controlStyles:
+    - target: ''
+      styles:
+        - ''
+  styleConstants:
+    - ''
+  themeResourceVariables:
+    - ''
+  explorerFrameContainerHeight: 0
+  xamlDiagnosticsHandling: ''
+  ```
+
+  </details>
+
+- Advanced:
+
+  <details>
+  <summary>Click to expand</summary>
+
+  ```json
+  {
+      "backgroundTranslucentEffect": "none",
+      "theme": "Translucent Explorer11",
+      "controlStyles[0].target": "Grid#CommandBarControlRootGrid",
+      "controlStyles[0].styles[0]": "Background=Transparent",
+      "controlStyles[0].styles[1]": "BorderThickness=0",
+      "controlStyles[1].target": "CommandBar#FileExplorerCommandBar",
+      "controlStyles[1].styles[0]": "Background=Transparent",
+      "controlStyles[2].target": "Grid#NavigationBarControlGrid",
+      "controlStyles[2].styles[0]": "Background=Transparent",
+      "controlStyles[3].target": "Grid#HomeViewRootGrid",
+      "controlStyles[3].styles[0]": "Background=Transparent",
+      "controlStyles[4].target": "FileExplorerExtensions.GalleryViewControl#GalleryViewControl > Grid",
+      "controlStyles[4].styles[0]": "Background=Transparent",
+      "controlStyles[5].target": "Microsoft.UI.Xaml.Controls.Grid#GalleryRootGrid",
+      "controlStyles[5].styles[0]": "Background=Transparent",
+      "controlStyles[6].target": "Grid#DetailsViewControlRootGrid",
+      "controlStyles[6].styles[0]": "Background=Transparent",
+      "explorerFrameContainerHeight": 0
+  }
+  ```
+
+  </details>
+
 ### Chris Titus Tech's Windows Utility
 
 Đây là một Interface terminal rất hữu ích của Chris Titus Tech. Ông ấy đã tóm tắt các lệnh hữu ích thành các button.
