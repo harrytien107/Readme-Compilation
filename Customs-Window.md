@@ -392,13 +392,14 @@ Cho phép hiển thị hiệu ứng mờ tự nhiên trong Windows 11.
     - Custom process exclusion list:
       <details>
       <summary>Click to expand</summary>
-      ```cmd
-      PDFXEdit.exe
-      WINWORD.EXE
-      EXCEL.EXE
-      POWERPNT.EXE
-      mathtype.exe
-      UniKeyNT.exe
+
+      ```
+        PDFXEdit.exe
+        WINWORD.EXE
+        EXCEL.EXE
+        POWERPNT.EXE
+        mathtype.exe
+        UniKeyNT.exe
       ```
       </details>
 
