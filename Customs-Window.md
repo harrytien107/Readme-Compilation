@@ -48,216 +48,363 @@ Lưu ý: nếu bạn lấy code của tôi thì chỉ cần vào mục `Settings
 
 1. Translucent Windows
 
-- Settings:
+Cho phép hiển thị hiệu ứng mờ tự nhiên trong Windows 11.
 
-  <details>
-  <summary>Click to expand</summary>
+- 1. Cấu hình 1:
 
-  ```yaml
-  RenderingMod:
-    ThemeBackground: 1
-    SysColors: 1
-    AccentColorControls: 1
-  type: acrylicblur
-  AccentBlurBehind: '00000000'
-  FlyoutsEffects: 0
-  ImmersiveDarkTitle: 1
-  ExtendFrame: 1
-  CornerOption: default
-  RainbowSpeed: 5
-  TitlebarColor:
-    ColorTitlebar: 1
-    RainbowTitlebar: 1
-    titlerbarstyles_active: f4b8e4
-    titlerbarstyles_inactive: f4b8e4
-  TitlebarTextColor:
-    ColorTitlebarText: 0
-    RainbowTextColor: 0
-    titlerbarcolorstyles_active: f4b8e4
-    titlerbarcolorstyles_inactive: f4b8e4
-  BorderColor:
-    ColorBorder: 1
-    RainbowBorder: 1
-    borderstyles_active: f4b8e4
-    borderstyles_inactive: f4b8e4
-  RuledPrograms:
-    - target: WINWORD.EXE
-      RenderingMod:
-        ThemeBackground: 0
-        AccentColorControls: 0
-      type: acrylicblur
-      AccentBlurBehind: ''
-      ImmersiveDarkTitle: 0
-      ExtendFrame: 0
-      CornerOption: ''
-      RainbowSpeed: 5
-      TitlebarColor:
-        ColorTitlebar: 0
-        RainbowTitlebar: 0
-        titlerbarstyles_active: ''
-        titlerbarstyles_inactive: ''
-      TitlebarTextColor:
-        ColorTitlebarText: 0
-        RainbowTextColor: 0
-        titlerbarcolorstyles_active: ''
-        titlerbarcolorstyles_inactive: ''
-      BorderColor:
-        ColorBorder: 1
-        RainbowBorder: 1
-        borderstyles_active: f4b8e4
-        borderstyles_inactive: f4b8e4
-    - target: EXCEL.EXE
-      RenderingMod:
-        ThemeBackground: 0
-        AccentColorControls: 0
-      type: acrylicblur
-      AccentBlurBehind: ''
-      ImmersiveDarkTitle: 0
-      ExtendFrame: 0
-      CornerOption: ''
-      RainbowSpeed: 5
-      TitlebarColor:
-        ColorTitlebar: 0
-        RainbowTitlebar: 0
-        titlerbarstyles_active: ''
-        titlerbarstyles_inactive: ''
-      TitlebarTextColor:
-        ColorTitlebarText: 0
-        RainbowTextColor: 0
-        titlerbarcolorstyles_active: ''
-        titlerbarcolorstyles_inactive: ''
-      BorderColor:
-        ColorBorder: 1
-        RainbowBorder: 1
-        borderstyles_active: f4b8e4
-        borderstyles_inactive: f4b8e4
-    - target: POWERPNT.EXE
-      RenderingMod:
-        ThemeBackground: 0
-        AccentColorControls: 0
-      type: acrylicblur
-      AccentBlurBehind: ''
-      ImmersiveDarkTitle: 0
-      ExtendFrame: 0
-      CornerOption: ''
-      RainbowSpeed: 5
-      TitlebarColor:
-        ColorTitlebar: 0
-        RainbowTitlebar: 0
-        titlerbarstyles_active: ''
-        titlerbarstyles_inactive: ''
-      TitlebarTextColor:
-        ColorTitlebarText: 0
-        RainbowTextColor: 0
-        titlerbarcolorstyles_active: ''
-        titlerbarcolorstyles_inactive: ''
-      BorderColor:
-        ColorBorder: 1
-        RainbowBorder: 1
-        borderstyles_active: f4b8e4
-        borderstyles_inactive: f4b8e4
-  ```
+  Loại trừ các `app bị lỗi giao diện` trong code để vẫn có `viền màu random`!
 
-  </details>
+  - Settings:
 
-- Advanced:
+    <details>
+    <summary>Click to expand</summary>
 
-  <details>
-  <summary>Click to expand</summary>
+    ```yaml
+    RenderingMod:
+      ThemeBackground: 1
+      SysColors: 1
+      AccentColorControls: 1
+    type: acrylicblur
+    AccentBlurBehind: 8C000000
+    FlyoutsEffects: 0
+    ImmersiveDarkTitle: 1
+    ExtendFrame: 1
+    CornerOption: default
+    RainbowSpeed: 5
+    TitlebarColor:
+      ColorTitlebar: 1
+      RainbowTitlebar: 1
+      titlerbarstyles_active: f4b8e4
+      titlerbarstyles_inactive: f4b8e4
+    TitlebarTextColor:
+      ColorTitlebarText: 0
+      RainbowTextColor: 0
+      titlerbarcolorstyles_active: f4b8e4
+      titlerbarcolorstyles_inactive: f4b8e4
+    BorderColor:
+      ColorBorder: 1
+      RainbowBorder: 1
+      borderstyles_active: f4b8e4
+      borderstyles_inactive: f4b8e4
+    RuledPrograms:
+      - target: WINWORD.EXE
+        RenderingMod:
+          ThemeBackground: 0
+          AccentColorControls: 0
+        type: none
+        AccentBlurBehind: ''
+        ImmersiveDarkTitle: 0
+        ExtendFrame: 0
+        CornerOption: ''
+        RainbowSpeed: 5
+        TitlebarColor:
+          ColorTitlebar: 0
+          RainbowTitlebar: 0
+          titlerbarstyles_active: ''
+          titlerbarstyles_inactive: ''
+        TitlebarTextColor:
+          ColorTitlebarText: 0
+          RainbowTextColor: 0
+          titlerbarcolorstyles_active: ''
+          titlerbarcolorstyles_inactive: ''
+        BorderColor:
+          ColorBorder: 1
+          RainbowBorder: 1
+          borderstyles_active: f4b8e4
+          borderstyles_inactive: f4b8e4
+      - target: EXCEL.EXE
+        RenderingMod:
+          ThemeBackground: 0
+          AccentColorControls: 0
+        type: none
+        AccentBlurBehind: ''
+        ImmersiveDarkTitle: 0
+        ExtendFrame: 0
+        CornerOption: ''
+        RainbowSpeed: 5
+        TitlebarColor:
+          ColorTitlebar: 0
+          RainbowTitlebar: 0
+          titlerbarstyles_active: ''
+          titlerbarstyles_inactive: ''
+        TitlebarTextColor:
+          ColorTitlebarText: 0
+          RainbowTextColor: 0
+          titlerbarcolorstyles_active: ''
+          titlerbarcolorstyles_inactive: ''
+        BorderColor:
+          ColorBorder: 1
+          RainbowBorder: 1
+          borderstyles_active: f4b8e4
+          borderstyles_inactive: f4b8e4
+      - target: POWERPNT.EXE
+        RenderingMod:
+          ThemeBackground: 0
+          AccentColorControls: 0
+        type: none
+        AccentBlurBehind: ''
+        ImmersiveDarkTitle: 0
+        ExtendFrame: 0
+        CornerOption: ''
+        RainbowSpeed: 5
+        TitlebarColor:
+          ColorTitlebar: 0
+          RainbowTitlebar: 0
+          titlerbarstyles_active: ''
+          titlerbarstyles_inactive: ''
+        TitlebarTextColor:
+          ColorTitlebarText: 0
+          RainbowTextColor: 0
+          titlerbarcolorstyles_active: ''
+          titlerbarcolorstyles_inactive: ''
+        BorderColor:
+          ColorBorder: 1
+          RainbowBorder: 1
+          borderstyles_active: f4b8e4
+          borderstyles_inactive: f4b8e4
+      - target: mathtype.exe
+        RenderingMod:
+          ThemeBackground: 0
+          AccentColorControls: 0
+        type: none
+        AccentBlurBehind: ''
+        ImmersiveDarkTitle: 0
+        ExtendFrame: 0
+        CornerOption: ''
+        RainbowSpeed: 5
+        TitlebarColor:
+          ColorTitlebar: 0
+          RainbowTitlebar: 0
+          titlerbarstyles_active: ''
+          titlerbarstyles_inactive: ''
+        TitlebarTextColor:
+          ColorTitlebarText: 0
+          RainbowTextColor: 0
+          titlerbarcolorstyles_active: ''
+          titlerbarcolorstyles_inactive: ''
+        BorderColor:
+          ColorBorder: 1
+          RainbowBorder: 1
+          borderstyles_active: f4b8e4
+          borderstyles_inactive: f4b8e4
+    ```
 
-  ```json
-  {
-      "RenderingMod.ThemeBackground": 1,
-      "RenderingMod.SysColors": 1,
-      "RenderingMod.AccentColorControls": 1,
-      "type": "acrylicblur",
-      "AccentBlurBehind": "00000000",
-      "FlyoutsEffects": 0,
-      "ImmersiveDarkTitle": 1,
-      "ExtendFrame": 1,
-      "CornerOption": "default",
-      "RainbowSpeed": 5,
-      "TitlebarColor.ColorTitlebar": 1,
-      "TitlebarColor.RainbowTitlebar": 1,
-      "TitlebarColor.titlerbarstyles_active": "f4b8e4",
-      "TitlebarColor.titlerbarstyles_inactive": "f4b8e4",
-      "TitlebarTextColor.ColorTitlebarText": 0,
-      "TitlebarTextColor.RainbowTextColor": 0,
-      "TitlebarTextColor.titlerbarcolorstyles_active": "f4b8e4",
-      "TitlebarTextColor.titlerbarcolorstyles_inactive": "f4b8e4",
-      "BorderColor.ColorBorder": 1,
-      "BorderColor.RainbowBorder": 1,
-      "BorderColor.borderstyles_active": "f4b8e4",
-      "BorderColor.borderstyles_inactive": "f4b8e4",
-      "RuledPrograms[0].target": "WINWORD.EXE",
-      "RuledPrograms[0].RenderingMod.ThemeBackground": 0,
-      "RuledPrograms[0].RenderingMod.AccentColorControls": 0,
-      "RuledPrograms[0].type": "acrylicblur",
-      "RuledPrograms[0].AccentBlurBehind": "",
-      "RuledPrograms[0].ImmersiveDarkTitle": 0,
-      "RuledPrograms[0].ExtendFrame": 0,
-      "RuledPrograms[0].CornerOption": "",
-      "RuledPrograms[0].RainbowSpeed": 5,
-      "RuledPrograms[0].TitlebarColor.ColorTitlebar": 0,
-      "RuledPrograms[0].TitlebarColor.RainbowTitlebar": 0,
-      "RuledPrograms[0].TitlebarColor.titlerbarstyles_active": "",
-      "RuledPrograms[0].TitlebarColor.titlerbarstyles_inactive": "",
-      "RuledPrograms[0].TitlebarTextColor.ColorTitlebarText": 0,
-      "RuledPrograms[0].TitlebarTextColor.RainbowTextColor": 0,
-      "RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_active": "",
-      "RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_inactive": "",
-      "RuledPrograms[0].BorderColor.ColorBorder": 1,
-      "RuledPrograms[0].BorderColor.RainbowBorder": 1,
-      "RuledPrograms[0].BorderColor.borderstyles_active": "f4b8e4",
-      "RuledPrograms[0].BorderColor.borderstyles_inactive": "f4b8e4",
-      "RuledPrograms[1].target": "EXCEL.EXE",
-      "RuledPrograms[1].RenderingMod.ThemeBackground": 0,
-      "RuledPrograms[1].RenderingMod.AccentColorControls": 0,
-      "RuledPrograms[1].type": "acrylicblur",
-      "RuledPrograms[1].AccentBlurBehind": "",
-      "RuledPrograms[1].ImmersiveDarkTitle": 0,
-      "RuledPrograms[1].ExtendFrame": 0,
-      "RuledPrograms[1].CornerOption": "",
-      "RuledPrograms[1].RainbowSpeed": 5,
-      "RuledPrograms[1].TitlebarColor.ColorTitlebar": 0,
-      "RuledPrograms[1].TitlebarColor.RainbowTitlebar": 0,
-      "RuledPrograms[1].TitlebarColor.titlerbarstyles_active": "",
-      "RuledPrograms[1].TitlebarColor.titlerbarstyles_inactive": "",
-      "RuledPrograms[1].TitlebarTextColor.ColorTitlebarText": 0,
-      "RuledPrograms[1].TitlebarTextColor.RainbowTextColor": 0,
-      "RuledPrograms[1].TitlebarTextColor.titlerbarcolorstyles_active": "",
-      "RuledPrograms[1].TitlebarTextColor.titlerbarcolorstyles_inactive": "",
-      "RuledPrograms[1].BorderColor.ColorBorder": 1,
-      "RuledPrograms[1].BorderColor.RainbowBorder": 1,
-      "RuledPrograms[1].BorderColor.borderstyles_active": "f4b8e4",
-      "RuledPrograms[1].BorderColor.borderstyles_inactive": "f4b8e4",
-      "RuledPrograms[2].target": "POWERPNT.EXE",
-      "RuledPrograms[2].RenderingMod.ThemeBackground": 0,
-      "RuledPrograms[2].RenderingMod.AccentColorControls": 0,
-      "RuledPrograms[2].type": "acrylicblur",
-      "RuledPrograms[2].AccentBlurBehind": "",
-      "RuledPrograms[2].ImmersiveDarkTitle": 0,
-      "RuledPrograms[2].ExtendFrame": 0,
-      "RuledPrograms[2].CornerOption": "",
-      "RuledPrograms[2].RainbowSpeed": 5,
-      "RuledPrograms[2].TitlebarColor.ColorTitlebar": 0,
-      "RuledPrograms[2].TitlebarColor.RainbowTitlebar": 0,
-      "RuledPrograms[2].TitlebarColor.titlerbarstyles_active": "",
-      "RuledPrograms[2].TitlebarColor.titlerbarstyles_inactive": "",
-      "RuledPrograms[2].TitlebarTextColor.ColorTitlebarText": 0,
-      "RuledPrograms[2].TitlebarTextColor.RainbowTextColor": 0,
-      "RuledPrograms[2].TitlebarTextColor.titlerbarcolorstyles_active": "",
-      "RuledPrograms[2].TitlebarTextColor.titlerbarcolorstyles_inactive": "",
-      "RuledPrograms[2].BorderColor.ColorBorder": 1,
-      "RuledPrograms[2].BorderColor.RainbowBorder": 1,
-      "RuledPrograms[2].BorderColor.borderstyles_active": "f4b8e4",
-      "RuledPrograms[2].BorderColor.borderstyles_inactive": "f4b8e4"
-  }
-  ```
+    </details>
 
-  </details>
+  - Advanced:
+
+    <details>
+    <summary>Click to expand</summary>
+
+    ```json
+    {
+        "RenderingMod.ThemeBackground": 1,
+        "RenderingMod.SysColors": 1,
+        "RenderingMod.AccentColorControls": 1,
+        "type": "acrylicblur",
+        "AccentBlurBehind": "00000000",
+        "FlyoutsEffects": 0,
+        "ImmersiveDarkTitle": 1,
+        "ExtendFrame": 1,
+        "CornerOption": "default",
+        "RainbowSpeed": 5,
+        "TitlebarColor.ColorTitlebar": 1,
+        "TitlebarColor.RainbowTitlebar": 1,
+        "TitlebarColor.titlerbarstyles_active": "f4b8e4",
+        "TitlebarColor.titlerbarstyles_inactive": "f4b8e4",
+        "TitlebarTextColor.ColorTitlebarText": 0,
+        "TitlebarTextColor.RainbowTextColor": 0,
+        "TitlebarTextColor.titlerbarcolorstyles_active": "f4b8e4",
+        "TitlebarTextColor.titlerbarcolorstyles_inactive": "f4b8e4",
+        "BorderColor.ColorBorder": 1,
+        "BorderColor.RainbowBorder": 1,
+        "BorderColor.borderstyles_active": "f4b8e4",
+        "BorderColor.borderstyles_inactive": "f4b8e4",
+        "RuledPrograms[0].target": "WINWORD.EXE",
+        "RuledPrograms[0].RenderingMod.ThemeBackground": 0,
+        "RuledPrograms[0].RenderingMod.AccentColorControls": 0,
+        "RuledPrograms[0].type": "acrylicblur",
+        "RuledPrograms[0].AccentBlurBehind": "",
+        "RuledPrograms[0].ImmersiveDarkTitle": 0,
+        "RuledPrograms[0].ExtendFrame": 0,
+        "RuledPrograms[0].CornerOption": "",
+        "RuledPrograms[0].RainbowSpeed": 5,
+        "RuledPrograms[0].TitlebarColor.ColorTitlebar": 0,
+        "RuledPrograms[0].TitlebarColor.RainbowTitlebar": 0,
+        "RuledPrograms[0].TitlebarColor.titlerbarstyles_active": "",
+        "RuledPrograms[0].TitlebarColor.titlerbarstyles_inactive": "",
+        "RuledPrograms[0].TitlebarTextColor.ColorTitlebarText": 0,
+        "RuledPrograms[0].TitlebarTextColor.RainbowTextColor": 0,
+        "RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_active": "",
+        "RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_inactive": "",
+        "RuledPrograms[0].BorderColor.ColorBorder": 1,
+        "RuledPrograms[0].BorderColor.RainbowBorder": 1,
+        "RuledPrograms[0].BorderColor.borderstyles_active": "f4b8e4",
+        "RuledPrograms[0].BorderColor.borderstyles_inactive": "f4b8e4",
+        "RuledPrograms[1].target": "EXCEL.EXE",
+        "RuledPrograms[1].RenderingMod.ThemeBackground": 0,
+        "RuledPrograms[1].RenderingMod.AccentColorControls": 0,
+        "RuledPrograms[1].type": "acrylicblur",
+        "RuledPrograms[1].AccentBlurBehind": "",
+        "RuledPrograms[1].ImmersiveDarkTitle": 0,
+        "RuledPrograms[1].ExtendFrame": 0,
+        "RuledPrograms[1].CornerOption": "",
+        "RuledPrograms[1].RainbowSpeed": 5,
+        "RuledPrograms[1].TitlebarColor.ColorTitlebar": 0,
+        "RuledPrograms[1].TitlebarColor.RainbowTitlebar": 0,
+        "RuledPrograms[1].TitlebarColor.titlerbarstyles_active": "",
+        "RuledPrograms[1].TitlebarColor.titlerbarstyles_inactive": "",
+        "RuledPrograms[1].TitlebarTextColor.ColorTitlebarText": 0,
+        "RuledPrograms[1].TitlebarTextColor.RainbowTextColor": 0,
+        "RuledPrograms[1].TitlebarTextColor.titlerbarcolorstyles_active": "",
+        "RuledPrograms[1].TitlebarTextColor.titlerbarcolorstyles_inactive": "",
+        "RuledPrograms[1].BorderColor.ColorBorder": 1,
+        "RuledPrograms[1].BorderColor.RainbowBorder": 1,
+        "RuledPrograms[1].BorderColor.borderstyles_active": "f4b8e4",
+        "RuledPrograms[1].BorderColor.borderstyles_inactive": "f4b8e4",
+        "RuledPrograms[2].target": "POWERPNT.EXE",
+        "RuledPrograms[2].RenderingMod.ThemeBackground": 0,
+        "RuledPrograms[2].RenderingMod.AccentColorControls": 0,
+        "RuledPrograms[2].type": "acrylicblur",
+        "RuledPrograms[2].AccentBlurBehind": "",
+        "RuledPrograms[2].ImmersiveDarkTitle": 0,
+        "RuledPrograms[2].ExtendFrame": 0,
+        "RuledPrograms[2].CornerOption": "",
+        "RuledPrograms[2].RainbowSpeed": 5,
+        "RuledPrograms[2].TitlebarColor.ColorTitlebar": 0,
+        "RuledPrograms[2].TitlebarColor.RainbowTitlebar": 0,
+        "RuledPrograms[2].TitlebarColor.titlerbarstyles_active": "",
+        "RuledPrograms[2].TitlebarColor.titlerbarstyles_inactive": "",
+        "RuledPrograms[2].TitlebarTextColor.ColorTitlebarText": 0,
+        "RuledPrograms[2].TitlebarTextColor.RainbowTextColor": 0,
+        "RuledPrograms[2].TitlebarTextColor.titlerbarcolorstyles_active": "",
+        "RuledPrograms[2].TitlebarTextColor.titlerbarcolorstyles_inactive": "",
+        "RuledPrograms[2].BorderColor.ColorBorder": 1,
+        "RuledPrograms[2].BorderColor.RainbowBorder": 1,
+        "RuledPrograms[2].BorderColor.borderstyles_active": "f4b8e4",
+        "RuledPrograms[2].BorderColor.borderstyles_inactive": "f4b8e4"
+    }
+    ```
+
+    </details>
+
+- 2. Cấu hình 2:
+
+  Loại trừ các `app bị lỗi giao diện` bằng `Custom process exclusion list` trong `Advanced`!
+
+  - Settings:
+
+    <details>
+    <summary>Click to expand</summary>
+
+    ```yaml
+    RenderingMod:
+      ThemeBackground: 1
+      SysColors: 0
+      AccentColorControls: 0
+    type: acrylicblur
+    AccentBlurBehind: 8C000000
+    FlyoutsEffects: 0
+    ImmersiveDarkTitle: 0
+    ExtendFrame: 1
+    CornerOption: default
+    RainbowSpeed: 5
+    TitlebarColor:
+      ColorTitlebar: 1
+      RainbowTitlebar: 1
+      titlerbarstyles_active: f4b8e4
+      titlerbarstyles_inactive: f4b8e4
+    TitlebarTextColor:
+      ColorTitlebarText: 1
+      RainbowTextColor: 1
+      titlerbarcolorstyles_active: f4b8e4
+      titlerbarcolorstyles_inactive: f4b8e4
+    BorderColor:
+      ColorBorder: 1
+      RainbowBorder: 1
+      borderstyles_active: f4b8e4
+      borderstyles_inactive: f4b8e4
+    RuledPrograms:
+      - target: ''
+        RenderingMod:
+          ThemeBackground: 0
+          AccentColorControls: 0
+        type: ''
+        AccentBlurBehind: ''
+        ImmersiveDarkTitle: 0
+        ExtendFrame: 0
+        CornerOption: ''
+        RainbowSpeed: 0
+        TitlebarColor:
+          ColorTitlebar: 0
+          RainbowTitlebar: 0
+          titlerbarstyles_active: ''
+          titlerbarstyles_inactive: ''
+        TitlebarTextColor:
+          ColorTitlebarText: 0
+          RainbowTextColor: 0
+          titlerbarcolorstyles_active: ''
+          titlerbarcolorstyles_inactive: ''
+        BorderColor:
+          ColorBorder: 0
+          RainbowBorder: 0
+          borderstyles_active: ''
+          borderstyles_inactive: ''
+    ```
+
+    </details>
+
+  - Advanced:
+
+    - Mod settings:
+      <details>
+      <summary>Click to expand</summary>
+
+      ```json
+      {
+          "RenderingMod.ThemeBackground": 1,
+          "RenderingMod.SysColors": 0,
+          "RenderingMod.AccentColorControls": 0,
+          "type": "acrylicblur",
+          "AccentBlurBehind": "8C000000",
+          "FlyoutsEffects": 0,
+          "ImmersiveDarkTitle": 0,
+          "ExtendFrame": 1,
+          "CornerOption": "default",
+          "RainbowSpeed": 5,
+          "TitlebarColor.ColorTitlebar": 1,
+          "TitlebarColor.RainbowTitlebar": 1,
+          "TitlebarColor.titlerbarstyles_active": "f4b8e4",
+          "TitlebarColor.titlerbarstyles_inactive": "f4b8e4",
+          "TitlebarTextColor.ColorTitlebarText": 1,
+          "TitlebarTextColor.RainbowTextColor": 1,
+          "TitlebarTextColor.titlerbarcolorstyles_active": "f4b8e4",
+          "TitlebarTextColor.titlerbarcolorstyles_inactive": "f4b8e4",
+          "BorderColor.ColorBorder": 1,
+          "BorderColor.RainbowBorder": 1,
+          "BorderColor.borderstyles_active": "f4b8e4",
+          "BorderColor.borderstyles_inactive": "f4b8e4"
+      }
+      ```
+
+      </details>
+
+    - Custom process exclusion list:
+      <details>
+      <summary>Click to expand</summary>
+      ```cmd
+      PDFXEdit.exe
+      WINWORD.EXE
+      EXCEL.EXE
+      POWERPNT.EXE
+      mathtype.exe
+      UniKeyNT.exe
+      ```
+      </details>
 
 2. Windows 11 Notification Center Styler
+
+Tùy chỉnh Trung tâm Thông báo và Trung tâm Hành động bằng các chủ đề do người khác đóng góp hoặc tạo chủ đề của riêng bạn.
 
 - Settings:
 
@@ -296,6 +443,8 @@ Lưu ý: nếu bạn lấy code của tôi thì chỉ cần vào mục `Settings
   </details>
 
 3. Windows 11 Start Menu Styler
+
+Tùy chỉnh menu Start với các chủ đề do người khác đóng góp hoặc tạo chủ đề của riêng bạn.
 
 - Settings:
 
@@ -346,6 +495,8 @@ Lưu ý: nếu bạn lấy code của tôi thì chỉ cần vào mục `Settings
   </details>
 
 4. Windows 11 Taskbar Styler
+
+Tùy chỉnh thanh tác vụ với các chủ đề do người khác đóng góp hoặc tạo chủ đề của riêng bạn.
 
 - 1. TranslucentTaskbar
 
@@ -813,9 +964,9 @@ Lưu ý: nếu bạn lấy code của tôi thì chỉ cần vào mục `Settings
 
 5. Windows 11 File Explorer Styler
 
-    Làm mờ thanh công cụ trong `Explorer`!
+    Tùy chỉnh File Explorer với các chủ đề do người khác đóng góp hoặc tạo chủ đề của riêng bạn. Nói đúng là làm mờ thanh công cụ trong `Explorer`!
 
-    __⚠️ Lưu ý__ Nếu dùng mod này thì mod `Translucent Windows` sẽ không còn trong suốt như đoạn code của tôi nữa mà sẽ chuyển thanh đục mờ!
+    __⚠️ Lưu ý__ Nếu dùng mod này thì mod `Translucent Windows` sẽ không còn trong suốt như đoạn code của tôi nữa mà sẽ chuyển thành đục mờ!
 
 - Settings:
 
