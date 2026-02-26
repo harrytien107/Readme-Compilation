@@ -32,7 +32,7 @@ Trước tiên bạn phải chuẩn bị một [USB cứu hộ](./Setup-Window-O
 
 **B4:** Cắm usb cứu hộ sao đó restart máy, trong lúc đang restart bấm các nút hàng F, để chọn môi trường trong usb cứu hộ
 
-**B5:** Coi theo video cài windows của "Neyako Phạm" [Link](https://vt.tiktok.com/ZS9JhErjobKJd-0MDv3/)
+**B5:** Coi theo video cài windows của "Neyako Phạm" [Link](https://vt.tiktok.com/ZS9JhErjobKJd-0MDv3/) hoặc đọc file hướng dẫn [File](./File/Hướng%20dẫn%20cài%20đặt%20Windows%20với%20WinNTSetup%20chuẩn%20UEFI.pdf)
 
 **B6:** Cài lại các phần mềm, sau khi cài lại windows
 
