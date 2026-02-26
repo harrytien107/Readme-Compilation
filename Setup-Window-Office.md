@@ -18,7 +18,7 @@ Bạn có thể làm theo video hướng dẫn dưới đây [Link video](https:
 
 __Lưu ý:__ Nếu bạn chưa phân vùng ổ cứng hay ổ cứng mới mua thì hãy làm theo dưới đây trước [Step-by-step](./Setup-Window-Office.md#lan-dau-cai-win-tren-mot-o-cung-moi)
 
-Trước tiên bạn phải chuẩn bị một [USB cứu hộ](./Setup-Window-Office.md#chuẩn-bị-usb-cứu-hộp) trước khi cài vì các hướng dẫn sau đây đều liên quan đến đó.
+Trước tiên bạn phải chuẩn bị một [USB cứu hộ](./Setup-Window-Office.md#chuẩn-bị-usb-cứu-hộ) trước khi cài vì các hướng dẫn sau đây đều liên quan đến đó.
 
 **B1:** Chia ổ đĩa (ít nhất 2 ổ C và D)
 
@@ -182,6 +182,86 @@ Kiểm tra lại phân vùng vừa tạo
 list partition
 ```
 B7: Gõ lệnh sau:
+
+```bash
+exit
+```
+
+### Ẩn các phân vùng vừa tạo khỏi hiện thị ở `This PC`
+
+B1: Mở Command Prompt với quyền admin.
+
+B2: Gõ lệnh sau:
+
+```bash
+diskpart
+```
+
+B3: Gõ lệnh sau:
+
+```bash
+list volume
+```
+
+B4: Gõ lệnh sau:
+
+```bash
+select volume X (thay X bằng số volume bạn muốn ẩn).
+```
+
+B5: Gõ lệnh sau:
+
+```bash
+remove letter=E (thay E bằng ký tự ổ đĩa bạn muốn ẩn). 
+```
+
+B6: Gõ lệnh sau:
+
+```bash
+exit
+```
+
+### Xóa phân vùng `Healthy (Recovery Partition)`
+
+B1: Mở Command Prompt với quyền admin.
+
+B2: Gõ lệnh sau:
+
+```bash
+diskpart
+```
+
+B3: Gõ lệnh sau:
+
+```bash
+list disk
+```
+
+B4: Gõ lệnh sau:
+
+```bash
+select disk X (thay X bằng số ổ đĩa bạn muốn xóa).
+```
+
+B5: Gõ lệnh sau:
+
+```bash
+list partition
+```
+
+B6: Gõ lệnh sau:
+
+```bash
+select partition X (thay X bằng số volume bạn muốn xóa).
+```
+
+B7: Gõ lệnh sau:
+
+```bash
+delete partition override
+```
+
+B8: Gõ lệnh sau:
 
 ```bash
 exit
