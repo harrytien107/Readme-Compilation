@@ -56,18 +56,12 @@ Get-AppxPackage -AllUsers *WindowsStore* | Foreach {Add-AppxPackage -DisableDeve
 
 **B8:** Cài phần mềm Winhance, để tắt/bật windows update
 
-**B9:** Active windows và Microsoft Office
+**B9:** Active `Windows` và `Microsoft Office`
 
-Mở PowerShell với quyền Admin
+Mở `PowerShell` với quyền Admin
 
 ```bash
 irm https://get.activated.win | iex
-```
-
-Mở Command Prompt với quyền Admin
-
-```bash
-irm https://get.activated.win
 ```
 
 ## Cài đặt và Active Office 365
